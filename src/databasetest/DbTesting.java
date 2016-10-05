@@ -19,8 +19,16 @@ import org.testng.annotations.AfterTest;
 public class DbTesting {
 	WebDriver driver;
 
+	
+	
+	/* Test Git hub */
+	
+	
+	
 	@Test
 	public void dbTest() throws ClassNotFoundException, SQLException {
+		
+		System.out.println("Hello Github");
 
 		Class.forName("com.mysql.jdbc.Driver");
 		
