@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="102" started-at="2016-09-22T09:14:42Z" finished-at="2016-09-22T09:14:42Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="102" started-at="2016-09-22T09:14:42Z" finished-at="2016-09-22T09:14:42Z">
+      <class name="databasetest.DbTesting">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:databasetest.DbTesting@d2cc05a]" name="beforeTest" is-config="true" duration-ms="5" started-at="2016-09-22T14:44:42Z" finished-at="2016-09-22T14:44:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="FAIL" signature="dbTest()[pri:0, instance:databasetest.DbTesting@d2cc05a]" name="dbTest" duration-ms="84" started-at="2016-09-22T14:44:42Z" finished-at="2016-09-22T14:44:42Z">
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[null,  message from server: "Host '111.93.30.242' is not allowed to connect to this MySQL server"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: null,  message from server: "Host '111.93.30.242' is not allowed to connect to this MySQL server"
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:970)
+	at com.mysql.jdbc.Connection.createNewIO(Connection.java:1768)
+	at com.mysql.jdbc.Connection.<init>(Connection.java:430)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:268)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at java.sql.DriverManager.getConnection(Unknown Source)
+	at databasetest.DbTesting.dbTest(DbTesting.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1129)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:746)
+	at org.testng.TestRunner.run(TestRunner.java:600)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1264)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1189)
+	at org.testng.TestNG.runSuites(TestNG.java:1104)
+	at org.testng.TestNG.run(TestNG.java:1076)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:126)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:152)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:57)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dbTest -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:databasetest.DbTesting@d2cc05a]" name="afterTest" is-config="true" duration-ms="0" started-at="2016-09-22T14:44:42Z" finished-at="2016-09-22T14:44:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- databasetest.DbTesting -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
